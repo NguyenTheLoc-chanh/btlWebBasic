@@ -179,4 +179,250 @@
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 
+/* Catergory */
+.catergory{
+    display: flex;
+    flex-direction: column;
+}
+
+.catergory_heading{
+    font-family: 'PT Sans';
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.catergory__search-link{
+    position: relative;
+    text-decoration: none; 
+    left: 13.33%;
+    top: 0.40%;
+    z-index: 1;
+}
+
+.catergory__search-icon{
+    width: 24px;
+    height: 24px;
+    color: #000000;
+}
+
+
+#catergory__search{
+    padding: 27px 67px;
+    gap: 10px;
+    position: relative;
+    width: 382px;
+    height: 74px;
+    border: 2px solid #C4B69C;
+    border-radius: 72px;
+}
+
+.catergory__list{
+    list-style: none;
+    padding-right: 113px;
+    width: 100%;
+    height: 448px;
+}
+
+.catergory__item {
+    padding: 10px 16px;
+    /* width: 282px; */
+    width: 100%;
+    height: 56px;
+    cursor: pointer;
+}
+.catergory__item:hover{
+    background-color: #C4B69C;
+    display: flex;
+    align-items: center;
+    border: 20px solid #C4B69C;
+    border-radius: 2px;
+}
+
+.catergory__btn{
+    padding: 16px;
+    gap: 10px;
+    width: 282px;
+    height: 100%;
+    background: #C4B69C;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: var(--white-color);
+    text-align: start;
+    border: 1px solid #ccc;
+}
+.catergory__btn:hover {
+    background-color: rgb(196, 182, 156, 0.7);
+}
+
+.catergory__item:last-child:hover {
+    border: none;
+    border-radius: 0; /* Không có border-radius khi hover */
+    background-color: #fff; /* Hoặc giữ nguyên màu nền */
+}
+
+.category__btn-icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 22px;
+    right: 134px;   
+    z-index: 1;
+    color: var(--white-color);
+}
+
+.catergory__item:last-child{
+    position: relative;
+    padding: 0;
+    /* padding: 10px 16px; */
+    /* width: 282px; */
+    width: 100%;
+    height: 56px;
+    cursor: pointer;
+}
+
+.catergory__illus{
+    margin-bottom: 6px;
+}
+/* Ảnh catergory */
+.catergory__img{
+    /* width: 384px;
+    height: 240px; */
+    width: 100%;
+    height: 265px;
+    background: url(.jpg), #FFFFFF;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Special Product */
+.product__special-item{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.product__special-heading {
+    font-family: 'PT Sans';
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.0025em;
+    color: #000000;
+}
+
+.product__special-img {
+    width: 100%;
+    height: 397px;
+    object-fit: cover;
+    background: url(.jpg), #D9D9D9;
+}
+
+.product__special-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.product__special-info-name {
+    width: 384px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.product__special__rating-number{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333;
+}
+
+.product__special__star--gold{
+    color: var(--star-gold-color);
+}
+
+.product__special-price{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.btn__addcart{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white-color);
+    padding: 12px 24px;
+    gap: 8px;
+    background: #C4B69C;
+    border-radius: 8px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+.btn__addcart:hover {
+    background-color: rgb(196, 182, 156, 0.7);
+}
+
+.header__navbar-item-icon {
+    color: var(--white-color);
+}
+
+/* Special Product left */
+.product__special-desc{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: 'PT Sans';
+    font-style: normal;
+}
+
+.product__special-detail{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+}
+.product__special-seemore{
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+.product__special-seemore{
+    position: relative;
+}
+
+.product__special-seemore-icon{
+    position: absolute;
+    top: 7px;
+    left: 70px;
+    width: 24px;
+    height: 24px;
+    color: #4F4F4F;
+}
+
+
+
+
+
+
 
