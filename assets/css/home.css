@@ -273,7 +273,7 @@
     width: 24px;
     height: 24px;
     top: 22px;
-    right: 134px;   
+    right: 126px;   
     z-index: 1;
     color: var(--white-color);
 }
@@ -303,6 +303,11 @@
 }
 
 /* Special Product */
+.product__special{
+    margin: 0 60px;
+    padding-bottom: 86px;
+}
+
 .product__special-item{
     text-decoration: none;
     color: var(--text-color);
@@ -371,6 +376,7 @@
     border-radius: 8px;
     border: 1px solid #333;
     cursor: pointer;
+    margin-right: 15px;
 }
 .btn__addcart:hover {
     background-color: rgb(196, 182, 156, 0.7);
@@ -418,8 +424,200 @@
     width: 24px;
     height: 24px;
     color: #4F4F4F;
+    cursor: pointer;
 }
 
+.other__product-lable{
+    display: flex;
+    justify-content: space-between;
+}
+
+.other__product-next{
+    display: flex;
+    align-items: center;
+}
+.btnNext{
+    padding: 0px;
+    isolation: isolate;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #DED0B6;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+.other__product-next .btnNext:first-child{
+    margin-right: 22px;
+}
+
+.other__product-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.product__other-info-name {
+    width: 384px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.product__other-price {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 4px;
+}
+
+/* Get Better */
+.better__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1329px;
+    height: 380px;
+    background: #808080;
+    border-radius: 0px 80px 0px 0px;
+    margin-top: 86px;
+}
+.better__container-img .better-img:first-child{
+    margin-right: 36px;
+}
+.better-img {
+    width: 282px;
+    height: 320px;
+    background: url(.jpg), #202020;
+}
+
+.better__container-link{
+    position: relative;
+}
+.better__link-heading {
+    position: relative;
+    top: -48px;
+    right: 199px;
+    width: 262px;
+    height: 105px;
+    font-family: 'PT Serif Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.0025em;
+    color: #FFFFFF;
+}
+.better__link-getnow{
+    position: relative;
+    top: -88px;
+    right: 199px;
+    font-family: 'PT Serif Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 54px;
+    letter-spacing: 0.0025em;
+    text-decoration-line: underline;
+    color: var(--white-color);
+}
+.better__link-img {
+    position: absolute;
+    top: -210px;
+    left: 46px;
+    width: 278px;
+    height: 520px;
+    background: url(sam-moghadam-khamseh-ofxbaFNFNmo-unsplash-removebg.png);
+}
+
+/* Benefit */
+.benefit__heading{
+    text-align: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.0025em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.benefit__container{
+    display: flex;
+    justify-content: space-around;
+}
+.benefit-pay,
+.benefit-policy,
+.benefit-support{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benifit-pay-img:hover,
+.benefit-policy-img:hover,
+.benefit-support-img:hover{
+    background-color: var(--hover-background);
+}
+
+.benefit-policy{
+    margin-right: 58px;
+}
+.benifit-pay-img,
+.benefit-policy-img,
+.benefit-support-img{
+    position: relative;
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    background: #DED0B6;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.benifit-pay-icon,
+.benefit-policy-icon,
+.benefit-support-icon{
+    position: absolute;
+    left: 24%;
+    top: 24%;
+    width: 51px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.benifit-pay-heading,
+.benefit-policy-heading,
+.benefit-support-heading{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.benifit-pay-heading:hover,
+.benefit-policy-heading:hover,
+.benefit-support-heading:hover{
+    color: var(--hover-color);
+}
+
+.benifit-pay-p,
+.benefit-policy-p,
+.benefit-support-p{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;    
+    line-height: 24px;
+    color: var(--text-color);
+}
 
 
 
