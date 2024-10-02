@@ -14,9 +14,31 @@
 * {
     box-sizing: inherit;
 }
+html, body {
+    margin: 0; /* Đặt margin bằng 0 để loại bỏ khoảng trắng mặc định */
+    padding: 0; /* Đặt padding bằng 0 */
+    height: 100%; /* Đặt chiều cao cho html và body */
+}
 
 html{
     font-family: 'PT Sans';
     font-style: normal;
     box-sizing: border-box;
+}
+/*Animation*/
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes growth {
+    from{
+        transform: scale(var(--growth-form));
+    }to{
+        transform: scale(var(--growth-to));
+    }
 }

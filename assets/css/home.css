@@ -8,7 +8,9 @@
     justify-content: space-between;
     height: var(--header-height);
 }
-
+.menu__mobile{
+    display: none;
+}
 .header__logo{
     margin-top: 2px;
     margin-left: 60px;
@@ -31,7 +33,7 @@
 
 .header__nav-item{
     margin: 0 54px;
-    width: 51px;
+    width: 82px;
     height: 28px;
     font-size: 20px;
     line-height: 28px;
@@ -261,7 +263,9 @@
 .catergory__btn:hover {
     background-color: rgb(196, 182, 156, 0.7);
 }
-
+.catergory__btn-mobile{
+    display: none;
+}
 .catergory__item:last-child:hover {
     border: none;
     border-radius: 0; /* Không có border-radius khi hover */
@@ -312,7 +316,10 @@
     text-decoration: none;
     color: var(--text-color);
 }
-
+.product__special-desc-mobile,
+.product__special-info-mobile{
+    display: none;
+}
 .product__special-heading {
     font-family: 'PT Sans';
     font-style: normal;
